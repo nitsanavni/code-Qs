@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+
+repositories {
+   mavenCentral()
+}
+
+jar {
+   baseName = 'code-qs'
+   version =  '0.1.0'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+   testCompile 'junit:junit:4.12'
+   testCompile 'org.hamcrest:hamcrest-all:1.3'
+}
+
